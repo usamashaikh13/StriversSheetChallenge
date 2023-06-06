@@ -5,7 +5,6 @@ using namespace std;
 int nCr(int n, int r) {
     long long res = 1;
 
-    // calculating nCr:
     for (int i = 0; i < r; i++) {
         res = res * (n - i);
         res = res / (i + 1);
@@ -20,8 +19,8 @@ int pascalTriangle(int r, int c) {
 
 int main()
 {
-    int r = 5; // row number
-    int c = 3; // col number
+    int r = 5; 
+    int c = 3; 
     int element = pascalTriangle(r, c);
     cout << "The element at position (r,c) is: "
             << element << "n";
